@@ -1,0 +1,94 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: rgb(227, 248, 248);
+    font-weight: bold;
+}
+.hero{
+    width: 100%;
+    min-height: 20vh;
+    /* background-image: url(anime.jpg); */
+    padding: 10px 10%;
+    background-position: center;
+    background-size: cover;
+    padding: 10px 10%;
+    overflow: hidden;
+    /* background-color: aquamarine; */
+}
+nav{
+    padding: 10px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.open{
+    width: 140px;
+}
+nav ul li{
+    display: inline-block;
+    list-style: none;
+    margin: 10px 15px ;
+}
+nav ul li a{
+    text-decoration: none;
+    color: brown;
+    font-weight: 400;
+}
+.login-btn{
+    text-decoration: none;
+    color: rgb(241, 5, 5);
+    margin-right: 15px;
+    font-weight: 400;
+}
+.btn{
+    display: inline-block;
+    text-decoration: none;
+    padding: 14px 40px;
+    color: rgb(166, 5, 241);
+    margin-right: 15px;
+     font-weight: 400;  
+    background-image: linear-gradient(45deg, #fff, #f235f2);
+    font-size: 14px;
+    border-radius: 30px;
+    border-top-right-radius: 0;
+    transition: 0.5s;
+}
+.content{
+    margin-bottom: 10px;
+    max-width: 600px;
+    padding: 14px 40px;
+}
+.content h1{
+    font-size: 70px;
+    color: brown;
+}
+.content p{
+    margin: 10px 0 30px;
+    color: brown;
+    background-color: aliceblue;
+}
+.content .btn{
+    padding: 15px 80px;
+    font-size: 15px;
+}
+.btn:hover{
+    border-top-right-radius: 30px;
+}
+.btn:hover{
+    color: black;
+    font-style: italic;
+}
+.anime{
+    opacity: 0;
+    transform: translateZ(30px);
+    animation: moveup 0.5s linear forwards;
+}
+@keyframes moveup{
+    100%{
+        opacity: 1;
+        transform: translateZ(0px);
+
+    }
+}
